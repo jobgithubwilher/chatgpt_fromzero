@@ -1,7 +1,6 @@
 # Chat GPT from Zero
 
 
-
 **Project Setup with `uv` + Jupyter (VS Code friendly)**
 
 This repo uses **[uv](https://docs.astral.sh/uv/)** for Python environments, dependency management, and fast installs. You’ll get:
@@ -121,7 +120,7 @@ uv sync          # installs runtime + dev
 uv sync --no-dev # installs runtime only
 ```
 
-**Why:** `uv sync` recreates the environment exactly from `uv.lock` for reproducible installs. ([Astral Docs][5])
+**Why:** `uv sync` recreates the environment exactly from `uv.lock` for reproducible installs.
 
 ---
 
@@ -172,21 +171,3 @@ uv add numpy pandas matplotlib scikit-learn
 # 4) start notebooks
 uv run --with jupyter jupyter lab
 ```
-
----
-
-## Troubleshooting
-
-* **VS Code says “ipykernel required”** → run `uv add --dev ipykernel` and reopen the notebook. ([Astral Docs][2])
-* **New machine setup** → `uv sync` (optionally `--no-dev`), then pick the `my-project` kernel or `.venv` in VS Code. ([Astral Docs][5])
-
----
-
-If you want, tell me your project name and the exact libraries you use and I’ll generate this README pre-filled, plus a starter `pyproject.toml` and `.vscode/settings.json` tuned for notebooks.
-
-[1]: https://formulae.brew.sh/formula/uv?utm_source=chatgpt.com "uv — Homebrew Formulae"
-[2]: https://docs.astral.sh/uv/guides/integration/jupyter/ "Using uv with Jupyter | uv"
-[3]: https://docs.astral.sh/uv/guides/install-python/?utm_source=chatgpt.com "Installing and managing Python | uv - Astral Docs"
-[4]: https://docs.astral.sh/uv/concepts/projects/dependencies/?utm_source=chatgpt.com "Managing dependencies | uv - Astral Docs"
-[5]: https://docs.astral.sh/uv/concepts/projects/sync/?utm_source=chatgpt.com "Locking and syncing | uv - Astral Docs"
-[6]: https://docs.astral.sh/uv/pip/compile/?utm_source=chatgpt.com "Locking environments | uv - Astral Docs"
