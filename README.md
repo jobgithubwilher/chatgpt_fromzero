@@ -107,7 +107,7 @@ Add dev tools (kept separate from runtime):
 uv add --dev ruff black pytest
 ```
 
-**Why:** `uv add` writes to `pyproject.toml` and updates `uv.lock`. Dev deps live in a separate group so they can be excluded in production if needed. ([Astral Docs][4])
+**Why:** `uv add` writes to `pyproject.toml` and updates `uv.lock`. Dev deps live in a separate group so they can be excluded in production if needed.
 
 ---
 
